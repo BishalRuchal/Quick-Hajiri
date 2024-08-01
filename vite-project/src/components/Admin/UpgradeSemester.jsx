@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
-import Sidebar from './Sidebar';
-import Footer from './Footer';
+
 
 const UpgradeSemester = () => {
   const [faculty, setFaculty] = useState("BICTE");
@@ -13,10 +11,7 @@ const UpgradeSemester = () => {
   const [semesterNew, setSemesterNew] = useState("2nd Sem");
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <div className="flex flex-grow">
-        <Sidebar />
+    
         <div className="flex-1 mt-1 ml-54 mb-20 flex flex-col">
           <div className="flex-grow bg-gray-300 border-1 border-gray-400 p-4 mt-20 ml-2">
             <h1 className="text-2xl font-bold mb-6 text-teal-800">Upgrade Semester</h1>
@@ -134,9 +129,7 @@ const UpgradeSemester = () => {
               </div>
             </div>
           </div>
-          <Footer />
-        </div>
-      </div>
+         
     </div>
   );
 };

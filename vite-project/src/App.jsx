@@ -7,7 +7,11 @@ import ManageTeacher from './components/Admin/ManageTeacher';
 import AddTeacher from './components/Admin/AddTeacher';
 import ManageStudent from './components/Admin/ManageStudent';
 import AddStudent from './components/Admin/AddStudent';
+import ManageFaculty from './components/Admin/ManageFaculty';
 import UpgradeSemester from './components/Admin/UpgradeSemester';
+import ManageSubject from './components/Admin/ManageSubject';
+import ManageAttendance from './components/Admin/ManageAttendance';
+import LogOut from './components/Admin/LogOut';
 
 const App = () => {
   return (
@@ -21,8 +25,13 @@ const App = () => {
           <Route path='add-teacher' element={<AddTeacher />} /> 
           <Route path ='manage-student' element={<ManageStudent />} /> 
           <Route path ='add-student' element={<AddStudent />} />
+          <Route path='managefaculty' element={<ManageFaculty />} />
           <Route path ='upgradesemester' element={<UpgradeSemester />} />
+          <Route path='managesubject' element={<ManageSubject />} />
+          <Route path='manageattendance' element={<ManageAttendance />} />
+
           </Route>
+          <Route path='/logout' element={<LogOut />} />
         
       </Routes>
     </Router>

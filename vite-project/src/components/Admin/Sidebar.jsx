@@ -18,10 +18,10 @@ const Sidebar = () => {
           { src: Dashboard, label: "Dashboard", to: "/admin/dashboard" },
           { src: Manageteacher, label: "Manage Teacher", to: "/admin/manage-teacher"},
           { src: Managestudent, label: "Manage Student", to:"/admin/manage-student"},
-          { src: Managefaculty, label: "Manage Faculty" },
+          { src: Managefaculty, label: "Manage Faculty", to:"/admin/managefaculty"},
           { src: Upgradesemester, label: "Upgrade Semester", to: "/admin/upgradesemester"},
-          { src: Managesubject, label: "Manage Subject" },
-          { src: Manageattendance, label: "Manage Attendance" },
+          { src: Managesubject, label: "Manage Subject", to:"/admin/managesubject"},
+          { src: Manageattendance, label: "Manage Attendance", to:"/admin/manageattendance"},
         ].map((item, index) => (
           <NavLink
            to={item.to}

@@ -1,17 +1,12 @@
 // src/components/Admin/Teacher/ManageTeacher.jsx
 import React from 'react';
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
-import Footer from './Footer';
+
 import {Link} from 'react-router-dom';
 const ManageStudent = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <div className="flex flex-grow">
-        <Sidebar />
+  
         <div className="flex-1 mt-1 ml-6 mb-20 flex flex-col">
-          <div className="flex-grow bg-gray-100 border-1 border-gray-400 p-4 mt-20 ml-2">
+          <div className="flex-grow bg-gray-200 border-1 border-gray-400 p-4 mt-20 ml-2">
             <h1 className="text-2xl font-semibold mb-4">Student</h1>
             <div className="flex justify-end mb-4">
               <Link to="/admin/add-student">
@@ -85,10 +80,7 @@ const ManageStudent = () => {
               </table>
             </div>
           </div>
-          <Footer />
-        </div>
-      </div>
-    </div>
+          </div>
   );
 };
 

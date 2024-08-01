@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
-import Footer from './Footer';
+
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
@@ -48,10 +46,7 @@ const AddTeacher = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <div className="flex flex-grow">
-        <Sidebar />
+   
         <div className="flex-1 mt-1 ml-6 mb-20 flex flex-col">
           <div className="flex-grow bg-gray-100 border-1 border-gray-400 p-4 mt-20 ml-2">
             <h1 className="text-2xl font-semibold mb-4">Add Teacher</h1>
@@ -143,9 +138,7 @@ const AddTeacher = () => {
               </div>
             </form>
           </div>
-          <Footer />
-        </div>
-      </div>
+          
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
